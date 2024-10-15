@@ -1,0 +1,6 @@
+{
+  "cSpell.words": ["clsx", "lucide", "tailwindcss"],
+  "files.associations": {
+    "*.css": "tailwindcss"
+  }
+}
