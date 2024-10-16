@@ -25,7 +25,7 @@ export default function Home() {
           </Link>
           <Link
             className="text-sm font-medium hover:underline underline-offset-4"
-            href="#contact"
+            href="/contact"
           >
             Contact
           </Link>
@@ -45,7 +45,7 @@ export default function Home() {
               </div>
               <div className="space-x-4">
                 <Button asChild>
-                  <Link href="#contact">Contact Me</Link>
+                  <Link href="/contact">Contact Me</Link>
                 </Button>
                 <Button asChild variant="outline">
                   <Link href="#projects">View Projects</Link>
@@ -73,7 +73,7 @@ export default function Home() {
                     alt={`Project ${project}`}
                     className="object-cover w-full h-60"
                     height="300"
-                    src={`/placeholder.svg?height=300&width=400`}
+                    src={`/image/logo/devops.webp?height=300&width=400`}
                     style={{
                       aspectRatio: "400/300",
                       objectFit: "cover",
@@ -112,7 +112,8 @@ export default function Home() {
                 "Node.js",
                 "Next.js",
                 "TypeScript",
-                "MongoDB",
+                "MySQL",
+                "Git",
               ].map((skill) => (
                 <li key={skill} className="flex items-center">
                   <svg
@@ -133,61 +134,6 @@ export default function Home() {
                 </li>
               ))}
             </ul>
-          </div>
-        </section>
-        <section
-          id="contact"
-          className="w-full py-12 md:py-24 lg:py-32 bg-gray-100 dark:bg-gray-800"
-        >
-          <div className="container px-4 md:px-6">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-              Contact Me
-            </h2>
-            <form className="mt-8 space-y-4">
-              <div>
-                <label
-                  className="block text-sm font-medium text-gray-700 dark:text-gray-200"
-                  htmlFor="name"
-                >
-                  Name
-                </label>
-                <input
-                  className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring focus:ring-primary focus:ring-opacity-50"
-                  id="name"
-                  required
-                  type="text"
-                />
-              </div>
-              <div>
-                <label
-                  className="block text-sm font-medium text-gray-700 dark:text-gray-200"
-                  htmlFor="email"
-                >
-                  Email
-                </label>
-                <input
-                  className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring focus:ring-primary focus:ring-opacity-50"
-                  id="email"
-                  required
-                  type="email"
-                />
-              </div>
-              <div>
-                <label
-                  className="block text-sm font-medium text-gray-700 dark:text-gray-200"
-                  htmlFor="message"
-                >
-                  Message
-                </label>
-                <textarea
-                  className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring focus:ring-primary focus:ring-opacity-50"
-                  id="message"
-                  required
-                  rows={4}
-                />
-              </div>
-              <Button type="submit">Send Message</Button>
-            </form>
           </div>
         </section>
       </main>
